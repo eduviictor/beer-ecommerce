@@ -38,7 +38,7 @@
 			<div class="w3_login_module">
 				<div class="module form-module">
 				  <div class="toggle"><i class="fa fa-times fa-pencil"></i>
-					<div class="tooltip">Click Me</div>
+					<div class="tooltip">Me clique</div>
 				  </div>
 				  <div class="form">
 					<h2>Já sou cliente</h2>
@@ -54,13 +54,20 @@
 					  <input type="text" name="Username" placeholder="Usuario" required=" ">
 					  <input type="password" name="Password" placeholder="Senha" required=" ">
 					  <input type="email" name="Email" placeholder="Email" required=" ">
-					  <input type="text" name="Phone" placeholder="Telefone" required=" ">
+						<input type="text" name="Phone" placeholder="Telefone" required=" ">
+						<input style="width: 70%; float: left;" type="text" name="street" placeholder="Rua" required=" ">
+						<input class="form-module-number" style="width: 28%; float: right;" type="number" name="number" placeholder="Número" required=" ">
+						<input type="text" name="Cep" placeholder="CEP" required=" ">
+						<select class="select_state_cities" style="width: 40%; float: left; background-color: white;" id="selects_estados"></select>
+						<select class="select_state_cities" style="width: 40%; float: right; background-color: white;" id="selects_cidades"></select>
+						<input type="text" name="Complemento" placeholder="Complemento" required=" ">
 					  <input type="submit" value="Criar">
 					</form>
 				  </div>
 				  <div class="cta"><a href="#">Esqueceu a senha?</a></div>
 				</div>
 			</div>
+			<script src="<?=base_url("assets/public/js/cidade-estados-brasil.min.js")?>"></script>
 			<script>
 				$('.toggle').click(function(){
 				  // Switches the Icon
@@ -72,6 +79,17 @@
 					'padding-bottom': 'toggle',
 					opacity: "toggle"
 				  }, "slow");
+				});
+				new statesCitiesBR({
+					states: {
+						elementID: "selects_estados",
+						defaultOption: "Estado"
+					},
+					cities: {
+						elementID: "selects_cidades",
+						state: "auto",
+						defaultOption: "Cidade"
+					}
 				});
 			</script>
 		</div>

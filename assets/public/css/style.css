@@ -2800,7 +2800,7 @@ input.checkbox:checked:after {
     font-weight: 400;
     line-height: 1;
 }
-.form-module input[type="text"],.form-module input[type="password"],.form-module input[type="email"] {
+.form-module input[type="text"],.form-module input[type="password"],.form-module input[type="email"], .form-module input[type="number"], .select_state_cities {
   outline: none;
   display: block;
   width: 100%;
@@ -2813,7 +2813,7 @@ input.checkbox:checked:after {
   transition: 0.3s ease;
   font-size:14px;
 }
-.form-module input[type="text"]:focus,.form-module input[type="password"]:focus,.form-module input[type="email"]:focus {
+.form-module input[type="text"]:focus,.form-module input[type="password"]:focus,.form-module input[type="email"]:focus, .form-module input[type="number"]:focus, .select_state_cities:focus {
   border:1px solid #A9A9A9;
   color: #333333;
 }
@@ -4819,7 +4819,7 @@ input.checkbox:checked:after {
 	.w3ls_w3l_banner_nav_right_grid1 h6 {
 		font-size: 1.1em;
 	}
-	.form-module input[type="text"], .form-module input[type="password"], .form-module input[type="email"] {
+	.form-module input[type="text"], .form-module input[type="password"], .form-module input[type="email"], .form-module input[type="number"], .select_state_cities {
 		margin: 0 0 10px;
 		padding: 10px;
 		font-size: 13px;

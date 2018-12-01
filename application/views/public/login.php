@@ -61,6 +61,7 @@
 						<select class="select_state_cities" style="width: 40%; float: left; background-color: white;" id="selects_estados"></select>
 						<select class="select_state_cities" style="width: 40%; float: right; background-color: white;" id="selects_cidades"></select>
 						<input type="text" name="Complemento" placeholder="Complemento" required=" ">
+						<input type="text" name="Apelido" placeholder="Apelido" required=" ">
 					  <input type="submit" value="Criar">
 					</form>
 				  </div>
